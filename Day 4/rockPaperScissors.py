@@ -28,14 +28,14 @@ scissors = '''
 '''
 
 def choose(value):
-    if value == '1' or value == 1:
+    if value == 1:
         print(rock)
-    elif value == '2' or value == 2:
+    elif value == 2:
         print(paper)
-    elif value == '3' or value == 3:
+    elif value == 3:
         print(scissors)
 
-symbol = input("Choose 1 for Rock, 2 for Paper, 3 for Scissors: ")
+symbol = int(input("Choose 1 for Rock, 2 for Paper, 3 for Scissors: "))
 
 choose(symbol)
 
@@ -45,17 +45,17 @@ computerSymbol = random.randint(1, 3)
 
 choose(computerSymbol)
 
-if symbol == '1' and computerSymbol == 1:
+if symbol == 1 and computerSymbol == 1:
     print("Draw!")
-elif symbol == '2' and computerSymbol == 2:
+elif symbol == 2 and computerSymbol == 2:
     print("Draw!")
-elif symbol == '3' and computerSymbol == 3:
+elif symbol == 3 and computerSymbol == 3:
     print("Draw!")
-elif symbol == '1' and computerSymbol == 3:
+elif symbol == 1 and computerSymbol == 3:
     print("You Win!")
-elif symbol == '3' and computerSymbol == 2:
+elif symbol == 3 and computerSymbol == 2:
     print("You Win!")
-elif symbol == '2' and computerSymbol == 1:
+elif symbol == 2 and computerSymbol == 1:
     print("You Win!")
 
 else:
